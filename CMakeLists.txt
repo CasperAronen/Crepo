@@ -4,4 +4,4 @@ project(Crepo C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(Crepo
-        Test.c)
+        Task2.c)
