@@ -16,3 +16,6 @@ add_executable(Task10 Task10.c)
 add_executable(Task11 Task11.c)
 add_executable(Task12 Task12.c)
 add_executable(Task13 Task13.c)
+
+
+add_executable(Project Project.c)
