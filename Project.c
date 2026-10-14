@@ -26,7 +26,7 @@ static void trim(char *s)
     size_t len = strlen(s);
     while (len > 0 && isspace((unsigned char)s[len-1])) s[len-1] = '\0';
 }
-
+/*Allows user to type with upper and lowercases and still find the schedule*/
 static int IgnoreCase(const char* a, const char* b)
 {
     while (*a && *b) {
@@ -35,7 +35,7 @@ static int IgnoreCase(const char* a, const char* b)
     }
     return *a == *b;
 }
-
+/*Compares two entries by their time for use with qsort*/
 static int CompareTime(const void *a, const void *b)
 {
     return ((const Entry*)a)->minutes - ((const Entry*)b)->minutes;
